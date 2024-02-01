@@ -54,7 +54,7 @@ export const fetchPeopleIFollow = ({ token, userId, transactionId, csrfToken }) 
     if (bottomEntry && entries.length > 2) {
       fetchNextPage(bottomEntry.content.value);
     } else {
-      const allF = results.flat().map((r) => ({
+      const people = results.flat().map((r) => ({
         name: r.content.itemContent.user_results.result.legacy.name,
         screen_name:
           r.content.itemContent.user_results.result.legacy.screen_name,
@@ -68,7 +68,7 @@ export const fetchPeopleIFollow = ({ token, userId, transactionId, csrfToken }) 
       }));
       console.log(
         "Here are the results sorted by follower count: ",
-        allF.sort((a, b) => b.followers_count - a.followers_count)
+        people.sort((a, b) => b.followers_count - a.followers_count)
       );
     }
   };
