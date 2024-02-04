@@ -2,9 +2,9 @@
 
 Export all people I follow on Twitter (nah, X).
 
-I build this because I'm leaving Twitter and wanted to keep the list of people I followed.
+Sadly there is no option to do it via Twitter UI directly and it's also not included in Twitters data export feature.
 
-Sadly there is no option to do it via Twitter directly and it's also not included in Twitters data export feature.
+Also I don't want to use a Twitter Dev account to be able to use the API.
 
 ## How to
 
