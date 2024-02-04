@@ -16,10 +16,11 @@ fetchPeopleIFollow({
   userId: xxx,
   transactionId: "",
   csrfToken: "",
+  path: "" // random path for 'graphql/${path}/Following' - taken also from network panel
 });
 ```
 
-The result array will look like:
+The result array will have this structure: 
 ```
 [{
     "name": "NASA",
